@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build QR Code Generator",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "src/main.c",
+                "lib/qrcodegen.c",
+                "lib/TinyPngOut.c",
+                "-Ilib",
+                "-o",
+                "build/qr.exe",
+                "-Wall",
+                "-Wextra"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
