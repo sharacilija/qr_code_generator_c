@@ -59,3 +59,11 @@ int main()
     TinyPngOut_write(&writer, pixels, size * size * 3);
     fclose(file);
 }
+
+
+/*
+for future updates:
+    git add .
+    git commit -m "describe changes"
+    git push
+*/
